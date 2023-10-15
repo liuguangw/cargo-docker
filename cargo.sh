@@ -12,4 +12,4 @@ docker run -it --rm \
   -v "${T_SHELL_DIR}/config.toml":/usr/local/cargo/config.toml \
   -v "${T_SHELL_DIR}/registry":/usr/local/cargo/registry \
   -v "$(pwd)":/usr/src/myapp \
-  -w /usr/src/myapp rust:${RUST_VERSION} cargo "$*"
+  -w /usr/src/myapp rust:${RUST_VERSION} cargo "$@"
