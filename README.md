@@ -27,3 +27,8 @@ ssl: OpenSSL 1.1.1u  30 May 2023
 os: Debian 12.0.0 [64-bit]
 ```
 
+## 相关配置
+
+`config.toml` 中可以配置镜像加速，默认配置的是 https://rsproxy.cn/ 的镜像，如果不需要，可以清空这个文件的内容，但是不要删除这个文件。
+
+`registry` 目录保存的依赖项的文件，一般下载`crate`依赖时会保存到这个目录，映射容器中的 `/usr/local/cargo/registry` 路径。
